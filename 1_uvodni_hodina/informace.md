@@ -1,15 +1,17 @@
 # Základní informace
-**Ing. Ondřej Krejčíř**
-[okrejcir@zatlanka.cz](mailto:okrejcir@zatlanka.cz)
-České vysoké učení technické v Praze - Fakulta Elektrotechnická
-Bakalářské studium: Softwarové technologie a management - Web a multimedia
-Magisterské studium: Otevřená informatika - Softwarové inženýrství
+## Vyučující
+**Ing. Ondřej Krejčíř**</br>
+[okrejcir@zatlanka.cz](mailto:okrejcir@zatlanka.cz)</br>
+České vysoké učení technické v Praze - Fakulta Elektrotechnická</br>
+Bakalářské studium: Softwarové technologie a management - Web a multimedia</br>
+Magisterské studium: Otevřená informatika - Softwarové inženýrství</br>
 
-**Springtide Ventures s.r.o., Dataspring s.r.o.**
-2015 - současnost
+### Praxe
+#### Springtide Ventures s.r.o., Dataspring s.r.o.
+- 2015 - současnost
 
-**Antee s.r.o.**
-2012 - 2015
+#### Antee s.r.o.
+- 2012 - 2015
 
 ## Náplň vyučovacích hodin
 - 2x 45 minut
