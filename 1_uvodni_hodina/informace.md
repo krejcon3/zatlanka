@@ -1,5 +1,6 @@
 # Základní informace
 **Ing. Ondřej Krejčíř**
+[okrejcir@zatlanka.cz](mailto:okrejcir@zatlanka.cz)
 České vysoké učení technické v Praze - Fakulta Elektrotechnická
 Bakalářské studium: Softwarové technologie a management - Web a multimedia
 Magisterské studium: Otevřená informatika - Softwarové inženýrství
