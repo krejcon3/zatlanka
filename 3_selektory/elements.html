@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		body {
+			color: red;
+		}
+
+		.body {
+			color: blue;
+		}
+
+		#body {
+			color: green;
+		}
+
+		.body:first-child {
+			color: black;
+		}
+
+		.body:nth-child(2) {
+			color: blueviolet;
+		}
+
+		.body:nth-child(2n) {
+			color: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<p class="body">Odstavec</p>
+	<p class="body">Odstavec</p>
+	<p id="body" class="body">Odstavec</p>
+	<p class="body">Odstavec</p>
+	<p class="body">Odstavec</p>
+	<p class="body">Odstavec</p>
+	<p class="body">Odstavec</p>
+</body>
+</html>
