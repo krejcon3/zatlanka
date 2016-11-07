@@ -1,5 +1,7 @@
 package funkce;
 
+import java.lang.reflect.Array;
+
 public class Test {
 
 	/*
@@ -26,9 +28,16 @@ public class Test {
 	 * pokud je fromMorse true převadí z morseovky do normální abecedy
 	 * pokud je fromMorse false převdáí z normální abecedy do morseovky
 	 *
+	 * pro a vrací .-
+	 * pro jakékoliv neočekávané vstupy (více než jedno písmeno, písmeno s diakritikou apod) vrací mezeru
+	 * pro mezeru vrací mezeru
+	 * převádí do a z morseovky i číslice
+	 *
 	 * uvažujme českou abecedu bez diakritiky
 	 *
 	 * hodnoceno za 2b
+	 *
+	 * HINT: a.split(",") -> získám String[]
 	 */
 	public static String morseAlphabet(String a, boolean fromMorse) {
 		return "";
