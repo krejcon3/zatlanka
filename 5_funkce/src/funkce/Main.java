@@ -1,38 +1,55 @@
 package funkce;
 
+import java.util.ArrayList;
+
 public class Main {
 
 	public static void main(String[] args) {
+		int points = 0;
 
-		/*
-		 * Testy pro faktorial
-		 */
-		int[] inputs = new int[] {0, 1, -10, 2, 5, 10};
-		int[] outputs = new int[] {1, 1, 0, 2, 120, 3628800};
-		for (int i = 0; i < inputs.length; i++) {
-			if (Test.faktorial(inputs[i]) == outputs[i]) {
-				System.out.println("Faktorial for value " + inputs[i] + ") PASSED");
-			} else {
-				System.out.println("!! Faktorial for value " + inputs[i] + ") FAILED");
+		String[] name = new String[] {"Faktorial", "Fibonacci", "Morse"};
+
+		ArrayList<Object[]> inputs = new ArrayList<Object[]>();
+		inputs.add(new Integer[] {0, 1, -10, 2, 5, 10});
+		inputs.add(new Integer[] {0, 1, -10, 2, 5, 10});
+
+		ArrayList<Object[]> outputs = new ArrayList<Object[]>();
+		outputs.add(new Integer[] {1, 1, 0, 2, 120, 3628800});
+		outputs.add(new Integer[] {1, 1, 0, 2, 8, 89});
+
+		boolean result = false;
+		int passed;
+		for (int i = 0; i < inputs.size(); i++) {
+			passed = 0;
+			for (int j = 0; j < inputs.get(i).length; j++) {
+				switch(i) {
+					case 0:
+						result = Test.faktorial((Integer) inputs.get(i)[j]) == (Integer) outputs.get(i)[j];
+						break;
+					case 1:
+						result = Test.fibonacci((Integer) inputs.get(i)[j]) == (Integer) outputs.get(i)[j];
+						break;
+					case 2:
+						result = Test.morseAlphabet((String)inputs.get(i)[j], j % 2 == 0).equals(outputs.get(i)[j]);
+						break;
+				}
+				if (result) {
+					System.out.println("OK: " + name[i] + " for value " + inputs.get(i)[j]);
+					passed ++;
+				} else {
+					System.out.println("ER: " + name[i] + " for value " + inputs.get(i)[j]);
+				}
 			}
+			System.out.println();
+			System.out.printf("Úloha %s splněna z %d/%d\r\n", name[i], passed, inputs.get(i).length);
+			int t = inputs.get(i).length == passed ? i == 2 ? 2 : 1 : 0;
+			System.out.printf("Zisk bodů: %d", t);
+			points += t;
+			System.out.println();
+			System.out.println();
 		}
-		System.out.println();
-
-		/*
-		 * Testy pro fibonacciho posloupnost
-		 */
-		inputs = new int[] {0, 1, -10, 2, 5, 10};
-		outputs = new int[] {1, 1, 0, 2, 8, 89};
-		for (int i = 0; i < inputs.length; i++) {
-			if (Test.fibonacci(inputs[i]) == outputs[i]) {
-				System.out.println("Fibonacci for value " + inputs[i] + ") PASSED");
-			} else {
-				System.out.println("!! Fibonacci for value " + inputs[i] + ") FAILED");
-			}
-		}
-
-		/*
-		 * Testy pro morseovku
-		 */
+		System.out.println("===========================");
+		System.out.printf("== Celkem získáno %d bodů ==\n", points);
+		System.out.println("===========================");
 	}
 }
