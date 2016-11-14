@@ -1,7 +1,5 @@
 package funkce;
 
-import java.lang.reflect.Array;
-
 public class Test {
 
 	/*
