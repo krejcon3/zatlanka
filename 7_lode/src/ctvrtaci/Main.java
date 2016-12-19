@@ -1,6 +1,5 @@
 package ctvrtaci;
 
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,7 +7,9 @@ import java.util.Scanner;
 public class Main {
 
 
-	static int rozmer = 8;
+	static int rozmer = 10;
+	static int hracZivoty = 0;
+	static int pocitacZivoty = 0;
 	static String[][] hrac = new String[rozmer][rozmer];
 	static String[][] pocitac = new String[rozmer][rozmer];
 
@@ -16,25 +17,52 @@ public class Main {
 	public static void main(String[] args) {
 		hrac = generujTabulku(rozmer);
 		pocitac = generujTabulku(rozmer);
+		System.out.println("Nyní zadává hráč!");
 		vypisTabulku(hrac, "Hráč");
 
-
+		System.out.println("Přidávám malou lod");
+		System.out.println("@");
 		int[] coords = zadejSouradnice();
 		hrac = lodMala(hrac, coords[0], coords[1]);
+		hracZivoty += 1;
 		vypisTabulku(hrac, "Hráč");
 
-
-		vypisTabulku(pocitac, "Počítač");
-		System.out.println();
-
-
-		// TADY HRAJEME
-		hrac = strel(hrac, 5, 3);
-		hrac = strel(hrac, 2, 2);
-
-
+		System.out.println("Přidávám malou lod");
+		System.out.println("@");
+		coords = zadejSouradnice();
+		hrac = lodMala(hrac, coords[0], coords[1]);
+		hracZivoty += 1;
 		vypisTabulku(hrac, "Hráč");
+
+		System.out.println("Konec zadávání hráče");
+
+		System.out.println("Nyní vygeneruji pole pro PC");
+		coords = generujSouradnice(rozmer);
+		pocitac = lodMala(pocitac, coords[0], coords[1]);
+		pocitacZivoty += 1;
+		coords = generujSouradnice(rozmer);
+		pocitac = lodMala(pocitac, coords[0], coords[1]);
+		pocitacZivoty += 1;
 		vypisTabulku(pocitac, "Počítač");
+		System.out.println("Konec generování lodí");
+
+		while (pocitacZivoty > 0 && hracZivoty > 0) {
+			System.out.println("Střelba!");
+			coords = zadejSouradnice();
+			strel(false, coords[0], coords[1]);
+			coords = generujSouradnice(rozmer);
+			strel(true, coords[0], coords[1]);
+			vypisTabulku(hrac, "Hráč");
+			vypisTabulku(pocitac, "Počítač");
+		}
+
+		if (hracZivoty == 0) {
+			System.out.println("Vyhrál pocitac");
+		}
+
+		if (pocitacZivoty == 0) {
+			System.out.println("Vyhral hrac");
+		}
 	}
 
 
@@ -81,19 +109,38 @@ public class Main {
 	}
 
 
-	private static String[][] strel(String[][] tabulka, int x, int y) {
+	private static void strel(boolean isPlayer, int x, int y) {
+		String[][] tabulka;
+		if (isPlayer) {
+			tabulka = hrac;
+		} else {
+			tabulka = pocitac;
+		}
 		if (x >= tabulka.length || x < 0 || y >= tabulka.length || y < 0) {
 			System.out.println("Neplatný tah");
-			return tabulka;
 		}
-		if (tabulka[x][y] == "@") {
-			tabulka[x][y] = "X";
-			System.out.println("Zásah!");
+		switch (tabulka[x][y]) {
+			case "@":
+				tabulka[x][y] = "X";
+				System.out.println("Zásah!");
+				if (isPlayer) {
+					hracZivoty -= 1;
+				} else {
+					pocitacZivoty -= 1;
+				}
+				break;
+			case " ":
+				tabulka[x][y] = "O";
+				System.out.println("Jantare");
+				break;
+			default:
+				System.out.println("Na pozici již bylo střileno");
+		}
+		if (isPlayer) {
+			hrac = tabulka;
 		} else {
-			tabulka[x][y] = "O";
-			System.out.println("Jantare");
+			pocitac = tabulka;
 		}
-		return tabulka;
 	}
 
 
@@ -126,7 +173,5 @@ public class Main {
 		return tabulka;
 	}
 }
-
-
 
 
