@@ -2,6 +2,7 @@
  * Created by ondrejkrejcir on 06/02/17.
  */
 public abstract class Clovek {
+	public String jmeno;
 	public boolean oci;
 	public boolean hlava;
 	public int nohy;
