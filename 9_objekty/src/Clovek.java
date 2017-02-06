@@ -8,12 +8,22 @@ public abstract class Clovek {
 	public int nohy;
 	public boolean ruce;
 
+	public void predstavSe() {
+		System.out.println("Ahoj já jsem " + jmeno);
+	}
+
+	public void mluv() {
+		System.out.println("Mluvím!");
+	}
+
 	public void zpivat() {
 		System.out.println("LALALALALALALALALALA");
 	}
+
 	public void pracovat() {
 		System.out.println("Ach ta práce je tak těžká");
 	}
+
 	public void ucit() {
 		System.out.println("Nauka? Muka...");
 	}
