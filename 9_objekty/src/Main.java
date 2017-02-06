@@ -8,6 +8,7 @@ public class Main {
 		Zena zena = new Zena();
 		zena.jmeno = "Gertruda";
 		muz.zeptej(zena);
+		System.out.println("=================");
 		zena.zeptej(muz);
 	}
 }

@@ -12,4 +12,11 @@ public class Zena extends Clovek {
 	public void kojit() {
 		System.out.println("Jsem matka a kojím!");
 	}
+
+	@Override
+	public void zeptej(Clovek c) {
+		System.out.println("Dobrý večer pane? Jak se jmenujete?");
+		c.predstavSe();
+		System.out.println("Jméno nic moc, nashledanou.");
+	}
 }
