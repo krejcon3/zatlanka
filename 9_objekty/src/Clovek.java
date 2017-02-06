@@ -16,6 +16,18 @@ public abstract class Clovek {
 		System.out.println("Mluvím!");
 	}
 
+	public String odpovez() {
+		return "Téměř s Vámi souhlasím, avšak zcela Vás nechápu...";
+	}
+
+	public void zeptej(Clovek c) {
+		this.predstavSe();
+		c.predstavSe();
+		System.out.println("Prosím Vás nevíte kolik je hodin?");
+		c.odpovez();
+		System.out.println("Aha tak děkuji nashledanou...");
+	}
+
 	public void zpivat() {
 		System.out.println("LALALALALALALALALALA");
 	}
