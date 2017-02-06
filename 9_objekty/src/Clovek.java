@@ -8,6 +8,8 @@ public abstract class Clovek {
 	public int nohy;
 	public boolean ruce;
 
+	public abstract void hovorit(Clovek c);
+
 	public void predstavSe() {
 		System.out.println("Ahoj já jsem " + jmeno);
 	}
