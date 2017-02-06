@@ -24,7 +24,7 @@ public abstract class Clovek {
 		this.predstavSe();
 		c.predstavSe();
 		System.out.println("Prosím Vás nevíte kolik je hodin?");
-		c.odpovez();
+		System.out.println(c.odpovez());
 		System.out.println("Aha tak děkuji nashledanou...");
 	}
 

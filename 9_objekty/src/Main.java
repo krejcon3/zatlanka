@@ -3,6 +3,11 @@
  */
 public class Main {
 	public static void main(String[] args) {
-
+		Muz muz = new Muz();
+		muz.jmeno = "Spytihněv";
+		Zena zena = new Zena();
+		zena.jmeno = "Gertruda";
+		muz.zeptej(zena);
+		zena.zeptej(muz);
 	}
 }
