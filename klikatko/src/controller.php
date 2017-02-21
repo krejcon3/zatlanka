@@ -13,18 +13,19 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 }
 
 $created = time();
-$type = stripper($_POST["type"]);
-$first_time = stripper($_POST["first_time"]);
-$second_time = stripper($_POST["second_time"]);
-$third_time = stripper($_POST["third_time"]);
-$forth_time = stripper($_POST["forth_time"]);
-$fifth_time = stripper($_POST["fifth_time"]);
+$type = stripper($_POST["type"]) ? 1 : 0;
+$first_time = stripper($_POST["first_time"])  ?: 0;
+$second_time = stripper($_POST["second_time"]) ?: 0;
+$third_time = stripper($_POST["third_time"]) ?: 0;
+$forth_time = stripper($_POST["forth_time"]) ?: 0;
+$fifth_time = stripper($_POST["fifth_time"]) ?: 0;
 
-$link = mysql_connect('localhost', 'root', '');
+$link = mysql_connect('host', 'user', 'password');
 if (!$link) {
     die('Internal error.');
 }
-$query = sprintf("INSERT INTO zaznam VALUES('', '%s', %d, '%s', '%s', '%s', '%s', '%s', '%s')",
+mysql_select_db('db_name', $link);
+$query = sprintf("INSERT INTO zaznam VALUES('', '%s', %d, %s, %s, %s, %s, %s, %s)",
     mysql_real_escape_string($ip),
     mysql_real_escape_string($created),
     mysql_real_escape_string($type),
@@ -35,3 +36,5 @@ $query = sprintf("INSERT INTO zaznam VALUES('', '%s', %d, '%s', '%s', '%s', '%s'
     mysql_real_escape_string($fifth_time));
 mysql_query($query);
 mysql_close($link);
+
+header("Location: http://klikatko.ondrejkrejcir.cz/thanks.html");
