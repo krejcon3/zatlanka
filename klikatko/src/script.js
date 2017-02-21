@@ -6,25 +6,34 @@ function run() {
 	context.fillText("Klikni a hraj!", 325, 200);
 
 	var iteration = 5;
-	var circle = {x: 0, y: 0, r: 0};
+	var circle = null;
 	var start = null;
 	canvas.addEventListener("click", function(e) {
-		if (iteration == 5 || iteration > 0 && checkClicked(circle, getMousePos(canvas, e))) {
-			handleTime(iteration, start);
+		if (circle == null) {
+			circle = {x: 0, y: 0, r: 0};
 			context.clearRect(0, 0, canvas.width, canvas.height);
-			circle.r = iteration * 10;
+			circle.r = iteration-- * 10;
 			circle.x = Math.floor((Math.random() * (800 - 2 * circle.r)) + circle.r);
 			circle.y = Math.floor((Math.random() * (400 - 2 * circle.r)) + circle.r);
 			drawCircle(context, circle);
 			start = new Date();
 		} else {
-			// save data
-			context.clearRect(0, 0, canvas.width, canvas.height);
-			handleTime(iteration, start);
-			start = null;
-			return;
+			if (checkClicked(circle, getMousePos(canvas, e))) {
+				handleTime(iteration, start);
+				context.clearRect(0, 0, canvas.width, canvas.height);
+				if (iteration > 0) {
+					circle.r = iteration * 10;
+					circle.x = Math.floor((Math.random() * (800 - 2 * circle.r)) + circle.r);
+					circle.y = Math.floor((Math.random() * (400 - 2 * circle.r)) + circle.r);
+					drawCircle(context, circle);
+					start = new Date();
+				} else {
+					document.getElementById("form").submit();
+				}
+				iteration--;
+			}
 		}
-		iteration--;
+		console.log(iteration);
 	});
 }
 
