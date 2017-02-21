@@ -37,4 +37,4 @@ $query = sprintf("INSERT INTO zaznam VALUES('', '%s', %d, %s, %s, %s, %s, %s, %s
 mysql_query($query);
 mysql_close($link);
 
-header("Location: http://klikatko.ondrejkrejcir.cz/thanks.html");
+header("Location: ../thanks.html");
