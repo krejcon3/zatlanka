@@ -2,23 +2,37 @@ function run() {
 	var canvas = document.getElementById("canvas");
 	var context = canvas.getContext("2d");
 
-	var playground = createTwoDimensionalArray(4 /* size of array 4x4 */ );
+	var playground = createTwoDimensionalArray(10 /* size of array 4x4 */ );
 	var player = 0;
-	drawPlayground(context, playground);
+	var winner = null;
+	drawPlayground(context, playground, player, winner);
 
 	canvas.addEventListener("click", function(e) {
+		if (winner !== null) {
+			return;
+		}
 		var coords = getMousePos(canvas, e);
 		coords.x = Math.floor(coords.x / (context.canvas.width / playground.length)); // calc sectors
 		coords.y = Math.floor(coords.y / (context.canvas.height / playground.length)); // calc sectors
-		console.log(coords);
+		if (playground[coords.x][coords.y] === 0 || playground[coords.x][coords.y] === 1) {
+			return;
+		}
 		playground[coords.x][coords.y] = player; // add mark of player
+		winner = checkWinner(playground, coords);
 		player = (player + 1) % 2; // change player
-		drawPlayground(context, playground);
+		drawPlayground(context, playground, player, winner);
 	});
 }
 
-function drawPlayground(context, playground) {
+function drawPlayground(context, playground, player, winner) {
 	context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+	if (winner !== null) {
+		context.canvas.style.backgroundColor = winner ? "#FF9696" : "#9696FF";
+		context.canvas.style.border = "5px solid black";
+	} else {
+		context.canvas.style.backgroundColor = "white";
+		context.canvas.style.border = "5px solid " + (player ? "red" : "blue");
+	}
 	var widthStep = (context.canvas.width / playground.length);
 	var heightStep = (context.canvas.height / playground.length);
 	for (var k = 1; k < playground.length; k++) {
@@ -71,6 +85,86 @@ function drawPlayground(context, playground) {
 			}
 		}
 	}
+}
+
+function checkWinner(playground, coords) {
+	if (checkHorizontal(playground, coords) ||
+		checkVertical(playground, coords) ||
+		checkDiagonalUp(playground, coords) ||
+		checkDiagonalDown(playground, coords)) {
+		return playground[coords.x][coords.y];
+	}
+	return null;
+}
+
+function checkHorizontal(playground, coords) {
+	var count = 0;
+	for (var i = 0; i < playground.length; i++) {
+		if (playground[i][coords.y] === playground[coords.x][coords.y]) {
+			count++;
+		} else {
+			count = 0;
+		}
+		if (count === 5) {
+			return true;
+		}
+	}
+	return false;
+}
+
+function checkVertical(playground, coords) {
+	var count = 0;
+	for (var i = 0; i < playground.length; i++) {
+		if (playground[coords.x][i] === playground[coords.x][coords.y]) {
+			count++;
+		} else {
+			count = 0;
+		}
+		if (count === 5) {
+			return true;
+		}
+	}
+	return false;
+}
+
+function checkDiagonalUp(playground, coords) {
+	var count = 0;
+	for (var i = -4; i < 5; i++) {
+		var x = coords.x + i;
+		var y = coords.y - i;
+		if (x < 0 || x > playground.length - 1 || y < 0 || y > playground.length - 1) {
+			continue;
+		}
+		if (playground[x][y] === playground[coords.x][coords.y]) {
+			count++;
+		} else {
+			count = 0;
+		}
+		if (count === 5) {
+			return true;
+		}
+	}
+	return false;
+}
+
+function checkDiagonalDown(playground, coords) {
+	var count = 0;
+	for (var i = -4; i < 5; i++) {
+		var x = coords.x + i;
+		var y = coords.y + i;
+		if (x < 0 || x > playground.length - 1 || y < 0 || y > playground.length - 1) {
+			continue;
+		}
+		if (playground[x][y] === playground[coords.x][coords.y]) {
+			count++;
+		} else {
+			count = 0;
+		}
+		if (count === 5) {
+			return true;
+		}
+	}
+	return false;
 }
 
 function getMousePos(canvas, evt) {
