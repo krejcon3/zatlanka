@@ -1,31 +1,41 @@
-#Informace k předmětu
+# Základní informace
+## Vyučující
+**Ing. Ondřej Krejčíř**</br>
+[ondrej.krejcir@zatlanka.cz](mailto:ondrej.krejcir@zatlanka.cz)</br>
+České vysoké učení technické v Praze - Fakulta Elektrotechnická</br>
+Bakalářské studium: Softwarové technologie a management - Web a multimedia</br>
+Magisterské studium: Otevřená informatika - Softwarové inženýrství</br>
 
-## Harmonogram 2. pololetí
+### Praxe
+#### Springtide Ventures s.r.o., Dataspring s.r.o.
+- 2015 - současnost
 
-### Třetí ročník
+#### Antee s.r.o.
+- 2012 - 2015
 
-#### Uzavření klasifikace 21.6.2017
+# Informace k předmětu
+## Náplň vyučovacích hodin
+- 2x 45 minut
+- 20-30 minut výklad látky potřebné k danému semináři
+- samostatná práce na zadaných úkolech
 
-#### Testy
-1. 15.2. (10b)
-2. 5.4. (10b)
-3. 26.4 (10b)
-4. 10.5. (10b)
+## Úkoly na seminářích
+- úkoly budou na každém semináři celkem 3 - základní (2b), těžší (3b) a bonusový úkol (5b)
+- na každý úkol lze využít veškeré informace dostupné na internetu či od kolegů
+- přísný zákaz plagiátorství
+- úkoly lze odevzdat i na začátku následujícího semináře
 
-#### Závěrečný projekt
-- odevzdání 24.5.
-- průběžné kontroly každou hodinu
+## Písemné testy
+- písemných testů bude celkem 5 za pololetí
+- z každého testu lze získat maximálně 10b
+- v případě absence bude test nahrazen ústní zkouškou
 
-### Čtvrtý ročník
+## Plagiátorství
+- přebírání myšlenek od kolegů je povoleno
+- přebírání kódu od kolegů je zakázáno
+- přejmenování proměnných nestačí :-)
 
-#### Uzavření klasifikace 17.4.2017
-
-#### Testy
-1. 15.2. (10b)
-2. 27.2. (10b)
-3. 20.3 (10b)
-4. 27.3. (10b)
-
-#### Závěrečný projekt
-- odevzdání 3.4.
-- průběžné kontroly každou hodinu
+## Hodnocení
+- výsledky při práci na seminářích (odezvdávání úloh)
+- písemné testy
+- aktivita na semináři
