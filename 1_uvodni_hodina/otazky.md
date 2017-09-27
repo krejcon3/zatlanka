@@ -9,7 +9,6 @@
 ### V čem se budeme učit programovat?
 - HTML a CSS
 - JavaScript
-- PHP či Java
 
 ### Proč mohu využívat veškeré materiály dostupné na internetu, ale nemohu kopírovat kódy od spolužáka?
 - Nalézání odpovědí na otázky pomocí internetu rozvíjí schopnosti pro definování problému

@@ -30,7 +30,7 @@
 * [w3schools](http://www.w3schools.com)
 
 ## Zadání úkolů
-### První úkol (1b)
+### První úkol (2b)
 1. Vytvořte HTML šablonu, která bude obsahovat
     * Titulek stránky
     * Nadpis stránky
@@ -38,18 +38,18 @@
     * 4 odstavce (každý uveden nadpisem odpovídající úrovně)
 2. Vložte do šablony CSS pomocí tagu ``<style>``
 
-### Druhý úkol (1b)
+### Druhý úkol (3b)
 1. Vložte do stránek video z youtube
 2. Vložte do stránek krátký video soubor
 3. Vložte do stránek tabulku s vaším rozvrhem
 4. Vložte do stránek seznam alespoň pěti odkazů
 
-### Bonusová úloha (2b)
+### Bonusová úloha (5b)
 * Vytvořte a připojte k šabloně externí css soubor
-* Obarvěte text odkazů červeně, při najetí myší zeleně
-* Nastylujte obrázky tak aby měly 1px široké okraje libovolné (ale viditelné) barvy
-* Nastylujte písmo dvou odstavců červeně a dvou modře
+* Obarvěte text odkazů červeně, při najetí myší zeleně (jen pomocí css)
+* Nastylujte obrázky tak aby měly 1px široké okraje libovolné (ale viditelné) barvy (jen pomocí css)
+* Nastylujte písmo dvou odstavců červeně a dvou modře (jen pomocí css)
     * Hint: atribut ``class``
-* Změňte velikost obrázků pomocí css
+* Změňte velikost obrázků (jen pomocí css)
 
 
