@@ -1,0 +1,15 @@
+img {
+	width: 300px;
+}
+a:link, a:visited {
+	color: red;
+}
+a:hover {
+	color: green;
+}
+.r {
+	color: red;
+}
+.b {
+	color: blue;
+}
