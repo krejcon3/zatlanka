@@ -1,0 +1,61 @@
+#container {
+		width: 800px;
+		background-color: lightblue;
+		margin: auto;
+}
+.vertical-block {
+		background-color: violet;
+		margin-bottom: 10px;
+}
+#header {
+		height: 200px;
+}
+#footer {
+		height: 150px;
+		background: red;
+}
+.article {
+		height: 100px;
+		padding: 5px;
+}
+	.article-content {
+		border: 2px dashed lightgrey;
+		border-radius: 20px;
+		padding: 5px;
+		float: right;
+}
+	.article-image {
+		border: 2px dashed lightgrey;
+		border-radius: 20px;
+		margin-right: 5px;
+		float: left;
+}
+	.article:nth-child(even) > .article-content:hover {
+		background: lightblue;
+}
+	.article:nth-child(odd) > .article-content:hover {
+		background: lightcoral;
+}
+	.article:nth-child(even) > .article-content {
+		float: left;
+}
+	.article:nth-child(even) > .article-image {
+		float: right;
+}
+img {
+		max-height: 200px;
+		max-width: 200px;
+		float: left;
+}
+div {
+		text-align: justify;
+}
+h3 {
+		padding-bottom: 10px;
+}
+table {
+		text-align: left;
+}
+th {
+		text-align: right;
+}

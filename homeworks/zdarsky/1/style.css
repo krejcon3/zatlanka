@@ -1,0 +1,91 @@
+body {
+  background-color: lightyellow; 
+}
+
+#krabice {
+  padding: 2px 16px;
+  margin: 0px auto;
+  margin-top: 15px;
+  width: 1000px;
+  height: 2350px;
+  background: lightgreen;
+  border-radius: 25px;
+}
+
+table {
+  background: red;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+h1 {
+  color: red;
+  font-family: comic sans ms; 
+  font-size: 42pt;
+  margin-top: 10px;
+  text-shadow: 0 0 3px #7cfc00, 0 0 5px  #ffd700;
+  text-align: center;
+}
+
+h1:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color:orange; 
+  font-family: comic sans ms;
+  font-size: 15pt;
+  text-align: left;
+}
+
+h3 {
+  color: red;
+  font-size: 18px; 
+}
+
+h4 {
+  color: yellow;
+  font-size: 20px; 
+}
+
+h5 {
+	color: red;
+  font-size: 20px; 
+}
+
+h5:hover {
+  color: green;
+}
+
+
+h6 {
+  color: #000080;
+  font-size: 18px; 
+}
+
+
+
+img {
+  border-radius: 25px;
+  height: 350px;
+  width: 300px;
+  border: 1px solid red;  
+}
+
+img:hover {
+  border: 3px solid green;  
+}
+
+footer {
+  border-top: 1px red;
+  padding-top: 5px;
+  margin: 8px auto 0px auto;
+  text-align: center;
+  width: 300px;
+  bottom: 0;
+  position: inherit;
+}
