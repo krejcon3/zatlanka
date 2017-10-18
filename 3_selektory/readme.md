@@ -9,7 +9,7 @@
 * pseudotřídy
 
 ## Zadání úkolů
-### První úkol (1b)
+### První úkol (2b)
 1. Změňte svého avatara v patičce dokumentu, stejně tak můžete upravit text patičky dle sebe
 2. Změňte šířku containeru na 800px a vycentrujte na střed
 3. Nastavte výšku hlavičky dokumentu na 200px
@@ -17,7 +17,7 @@
 5. Nastavte výšku všech článků na 100px
 6. Nastavte veliksot všech obrázků na max 200x200px
 
-### Druhý úkol (1b)
+### Druhý úkol (3b)
 1. Zarovnejte veškerý text v odstavcích do bloku 
 2. Zarovnejte text v hlavičkových buňkách tabulky vpravo, zbytek textu tabulky vlevo
 3. Nastavte rámeček u article-image a article-content na 2px silný, přerušovaný, světle šedý včetně zaoblených rohů
@@ -27,7 +27,7 @@
 7. Vnější odsazení nadpisu ve článku bude nastaveno na 10px směrem dolů, zbytek odsazení nebude definován
 
 
-### Bonusová úloha (2b)
+### Bonusová úloha (5b)
 1. Zarovnejte obrázky v článcích (article-image) v hlavičce i v patičce vlevo
     * Hint: `float`
 2. Zarovnejte blok textu (at už h2, article-content či right-halg) vpravo
