@@ -30,6 +30,26 @@ Magisterské studium: Otevřená informatika - Softwarové inženýrství</br>
 - z každého testu lze získat maximálně 10b
 - v případě absence bude test nahrazen ústní zkouškou
 
+### Písemný test 1
+- 3.11.2017
+- HTML/CSS
+
+### Písemný test 2
+- 29.11.2017
+- základní datové typy a řídící algoritmy programu v Javascriptu
+
+### Písemný test 3
+- 6.12.2017
+- funkce a pole v Javascriptu
+
+### Písemný test 4
+- 20.12.2017
+- souhrn Javascriptu
+
+### Pololetní písemný test
+- 10.1.2017
+- souhrn látky probrané v pololetí
+
 ## Plagiátorství
 - přebírání myšlenek od kolegů je povoleno
 - přebírání kódu od kolegů je zakázáno

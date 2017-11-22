@@ -9,10 +9,40 @@ var array2 = [1, 2, 3, 4];
 - Proč to používat?
 - Jaké typy mohou být v poli použité?
 
-## Vlastnosti polé
+## Rekurzivní funkce
+- co to je?
+- k čemu to může sloužit?
+- co musí být definováno v rekurzivní funkci?
+- jaké je nebezpečí rekurzivní funkce?
+
+## Vlastnosti pole
 - délka
 - indexování (první a poslední index)
 - přistupování k jednotlivým prvkům
+
+## Fibonacciho posloupnost
+### Pomocí rekurze
+```javascript
+function fibonacci_recursion(number) {
+    if (number < 1) {
+        return 0;
+    }
+    if (number == 1) {
+        return 1;
+    }
+    return fibonacci_recursion(number - 1) + fibonacci_recursion(number - 2);
+}
+```
+### Pomocí pole
+```javascript
+function fibonacci_array(number) {
+    var array = [0, 1];
+    for (var i = 2; i <= number; i++) {
+        array[i] = array[i - 1] + array[i - 2];
+    }
+    return array[number];
+}
+```
 
 ## Zadání úkolů
 ### První úkol (2b)
