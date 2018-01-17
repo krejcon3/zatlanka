@@ -1,0 +1,269 @@
+	body{
+		background: url(./imgs/bg.png);
+		height: 650px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: auto 1000px;
+		background-color: #010102;
+		margin: 0;
+	}
+	
+	.menu{
+		text-align: center;
+		width: 100%;
+		height: 60px;
+		background: #010102;
+	}
+
+	.menu ul li {
+				list-style: none;
+				display: inline;    
+	}
+	
+	.menu a:hover {
+					animation: foo01 2s forwards;
+	}
+	
+	@keyframes foo01 {
+			100% {
+				color: black;
+				background-color: white;
+			}
+			
+
+	}
+	
+	.menu a.domu {
+	background-color: #a34f52;
+	}
+	
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 20px;
+		overflow: hidden;
+		text-align: center;
+	}
+	
+	li a {
+		color: white;
+		padding: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		text-decoration: none;
+		font-size: 15px;
+		font-family: arial;
+		text-transform: uppercase;
+		position: relative;
+
+	}
+
+	.profpic{
+			width: 400px;
+			height: 250px;
+			position: absolute;
+			top: 340px;
+			margin: 0 auto;
+			right: 0;
+			left: 0;
+	}
+
+	.header{
+			height: 500px;
+	}
+	
+	.main{	
+			position: relative;
+			width: 1200px;
+			margin: 0 auto;
+	}
+
+	.jingwei{
+				position: absolute;
+				right: 11%;
+				top: 380px;
+				height: auto;
+				width: 340px;
+	}
+	
+	.intro{
+			position: absolute;
+			right: 0;
+			color: white;
+			width: 800px;
+			padding-left: 40px;
+			text-align: left;
+	}
+	
+	.skillbar {
+				position:relative;
+				display:block;
+				margin-bottom:15px;
+				width:350px;
+				background:#eee;
+				height:20px;
+				border-radius:3px;
+				-moz-border-radius:3px;
+				-webkit-border-radius:3px;
+				-webkit-transition:0.4s linear;
+				-moz-transition:0.4s linear;
+				-ms-transition:0.4s linear;
+				-o-transition:0.4s linear;
+				transition:0.4s linear;
+				-webkit-transition-property:width, background-color;
+				-moz-transition-property:width, background-color;
+				-ms-transition-property:width, background-color;
+				-o-transition-property:width, background-color;
+				transition-property:width, background-color;
+}
+
+	.skillbar-title {
+						position:absolute;
+						top:0;
+						left:0;
+						width:110px;
+						font-size:13px;
+						text-transform: uppercase;
+						color:#ffffff;
+						background:black;
+						-webkit-border-top-left-radius:3px;
+						-webkit-border-bottom-left-radius:4px;
+						-moz-border-radius-topleft:3px;
+						-moz-border-radius-bottomleft:3px;
+						border-top-left-radius:3px;
+						border-bottom-left-radius:3px;
+	}
+
+	.skillbar-title span {
+							display:block;
+							background:rgba(0, 0, 0, 0.1);
+							padding:0 20px;
+							font-family: arial;
+							font-size: 10px;
+							height:20px;
+							line-height:20px;
+							-webkit-border-top-left-radius:3px;
+							-webkit-border-bottom-left-radius:3px;
+							-moz-border-radius-topleft:3px;
+							-moz-border-radius-bottomleft:3px;
+							border-top-left-radius:3px;
+							border-bottom-left-radius:3px;
+	}
+
+	.skillbar-bar {
+					height:20px;
+					width:0px;
+					background:#a34f52;
+					border-radius:3px;
+					-moz-border-radius:3px;
+					-webkit-border-radius:3px;
+}
+
+	.skill-bar-percent {
+						position: absolute;
+						right:10px;
+						top:0;
+						font-size:12px;
+						font-family: arial;
+						font-weight: bold;
+						height:20px;
+						line-height:20px;
+						color:black;
+	}
+	
+	.bar {
+			width: 290px;
+			position: absolute;
+			right: 15%;
+			padding-top: 100px;
+			padding-bottom: 30px;
+	}
+	
+	.bar2 {
+			width: 290px;
+			position: absolute;
+			top: 200px;
+			right: 15%;
+			padding-bottom: 30px;
+	}
+	
+	.bar3 {
+			width: 290px;
+			position: absolute;
+			top: 240px;
+			right: 15%;
+			padding-bottom: 30px;
+	}
+	
+	.bar4 {
+			width: 290px;
+			position: absolute;
+			top: 280px;
+			right: 15%;
+			padding-bottom: 30px;
+	}
+	
+	.bar5 {
+			width: 290px;
+			position: absolute;
+			top: 320px;
+			right: 15%;
+			padding-bottom: 30px;
+	}
+	
+	p{
+		font-size: 14px;
+	}
+	
+	.skills{
+			font-family: century gothic;
+			color: white;
+			position: absolute;
+			right: 14%;
+			top: 80px;
+			font-size: 30px;
+			letter-spacing: 5px;
+	}
+	
+	.about{
+			position: absolute;
+			left: 10%;
+			top: 165px;
+			width: 300px;
+			height: 325px;
+			background-color: black;
+	}
+	
+
+	
+	.hello {
+			font-family: century gothic;
+			color: white;
+			position: absolute;
+			left: 10%;
+			top: 500px;
+			font-size: 30px;
+			letter-spacing: 5px;
+			background-color: #a34f52;
+			padding: 3px;
+	}
+			
+	
+	.aboutme{
+			font-family: century gothic;
+			color: white;
+			position: absolute;
+			left: 17%;
+			top: 90px;
+			font-size: 30px;
+			letter-spacing: 5px;
+	}
+	
+	.abouttext {
+				color: white;
+				width: 260px;
+				margin-left: 23px;
+				line-height: 170%;
+	}
+	
+	

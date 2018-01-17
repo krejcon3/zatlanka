@@ -1,0 +1,125 @@
+	body{
+		background: url(./imgs/bg.png);
+		height: 650px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: auto 1000px;
+		background-color: #010102;
+		margin: 0;
+	}
+	
+	.menu{
+		text-align: center;
+		width: 100%;
+		height: 60px;
+		background: #010102;
+	}
+
+	.menu ul li {
+				list-style: none;
+				display: inline;    
+	}
+	
+	.menu a:hover {
+					animation: foo01 2s forwards;
+	}
+	
+	@keyframes foo01 {
+						100% {
+							color: black;
+							background-color: white;
+						}
+			
+
+	}
+	
+	.menu a.something {
+						background-color: #a34f52;
+	}
+	
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 20px;
+		overflow: hidden;
+		text-align: center;
+	}
+	
+	li a {
+		color: white;
+		padding: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		text-decoration: none;
+		font-size: 15px;
+		font-family: arial;
+		text-transform: uppercase;
+		position: relative;
+
+	}
+
+
+	.header{
+			height: 500px;
+	}
+	
+	.main{	
+			position: relative;
+			width: 1200px;
+			margin: 0 auto;
+	}
+
+
+	.calculator {
+				  width: 270px;
+				  position: absolute;
+				  top: 100px;
+				  margin: 0 auto;
+				  right: 0;
+				  left:0;
+				  padding: 15px;
+				  text-align: center;
+				  background: #a34f52;
+				  font-family: arial;
+				  text-transform: uppercase;
+	}
+	.control {
+			  margin: 10px auto;
+			  overflow: hidden;
+			  width: 96.296296296%;
+	}
+	.control button {
+					  display: inline-block;
+					  width: 60px;
+					  height: 30px;
+					  float: left;
+					  margin: 2px 0 2px 4px;
+					  background: black;
+					  border: none;
+					  outline: none;
+					  cursor: pointer;
+					  color: white;
+	}
+	
+	.control button:hover {
+						  background: grey;
+	}
+	.result {
+			  width: 93.33333%;
+			  margin-left: 8px;
+			  margin-bottom: 20px;
+	}
+	.result input {
+				  display: block;
+				  text-align: right;
+				  height: 40px;
+				  width: 100%;
+				  margin: 0 auto;
+				  outline: none;
+				  border: none;
+				  cursor: default;
+	}
+	
+	.hello{
+			display: none;
+	}

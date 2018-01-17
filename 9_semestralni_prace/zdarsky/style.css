@@ -1,0 +1,216 @@
+html {
+    background-image: url("fotky/pozaddi.jpg");
+    text-align: center;
+}
+
+.main {
+
+}
+
+.obsah {
+    width: 1200px;
+    margin: auto;
+}
+
+.main-header {
+    width: 1200px;
+    height: 300px;
+}
+
+.logo {
+    background-image: url("fotky/loggo.png");
+    width: 240px;
+    height: 240px;
+    float: left;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.jmeno {
+    height: 100px;
+    width: 400px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.jmeno p {
+    font-size: 44px;
+    font-weight: 300;
+    color: white;
+    margin-left: 15px;
+    margin-top: 20px;
+    float: left;
+}
+
+.jmeno span {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: -30px;
+    margin-right: -40px;
+    float: right;
+    color: lightgray;
+
+}
+
+.menu {
+
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 280px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+.text {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 750px;
+    margin: auto;
+    border: 1px solid lightgray;
+}
+
+.text p {
+    color: white;
+}
+
+.text h2 {
+    font-size: 20px;
+}
+
+video {
+    width: 320px;
+    height: 240px;
+
+}
+
+.foto {
+    margin: auto;
+}
+
+.foto h2 {
+    color: white;
+}
+
+.foto img {
+    border: 3px solid #ccc;
+}
+
+.foto img:hover {
+    border: 5px solid black;
+}
+
+.zivotopis {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 750px;
+    margin: auto;
+    border: 1px solid lightgray;
+}
+
+.zivotopis h2 {
+    color: black;
+    border-style: dashed;
+    border-color: black;
+
+}
+
+.zivotopis h3 {
+    color: lightgray
+}
+
+.zivotopis a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+}
+
+.zivotopis a:hover {
+    background-color: black;
+
+}
+
+.vizitka {
+    margin: auto;
+}
+
+footer {
+    border-top: 1px dashed black;
+    padding-top: 5px;
+    margin: 8px auto 0px auto;
+    text-align: center;
+    width: 1000px;
+    bottom: 0;
+    position: inherit;
+}
+
+#box1 {
+    padding: 2px 16px;
+    margin: 0px auto;
+    margin-top: 15px;
+    width: 1200px;
+    height: 400px;
+
+}
+
+div.relative {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: green;
+    border-radius: 10px;
+    background: black;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: monospace;
+    color: green;
+    font-size: 15px;
+
+}
+
+div.absolute {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid grey;
+    background: white;
+    font-family: fantasy;
+    font-size: 15px
+}

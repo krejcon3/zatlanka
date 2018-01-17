@@ -1,0 +1,34 @@
+/* CSS Document */
+p {font-family: Apple Chancery, cursive;}
+.menu {float: left; width: 200px;height:1000px; font-size: 150%; font-family: Apple Chancery, cursive;}
+.text {width: 1002px;height:1000px;}
+.header {font-size: 200%; margin-left: 200px; height:100px;text-decoration: underline;}
+.footer {color:white; height: 200px;}
+td {width: 200px; border: black 1px;}
+.online {float: left; width: 350px; background-image: url("Space.jpg");}
+.Adresa{float: right; width: 350px}
+.Vlevo{float:left; border-left: 1px solid black;width:400px; height:1000px;border-top: 1px solid black;border-bottom: 1px solid black;background-color:white;}
+.Vpravo{float:right;border-right: 1px solid black; width:400px;height:1000px;border-bottom: 1px solid black;border-top: 1px solid black; background-color:white;}
+.Prvni{background-color:blue;}
+.Druha{background-color:red;} 
+.Treti{background-color:yellow;} 
+.First{background-color:purple;} 
+.Second{background-color:green;} 
+.Third{background-color:pink;}
+table, th, td {
+   border: 1px solid white; background-color: black; color: white;
+}
+body {background-image:url("cc.png") ; }
+.prop {border: solid black 1px;}
+img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+
+

@@ -1,0 +1,301 @@
+	body{
+		background: url(./imgs/bg2.png);
+		height: 1800px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: auto 1000px;
+		background-color: #010102;
+		margin: 0;
+	}
+	
+	.menu{
+		text-align: center;
+		width: 100%;
+		height: 60px;
+		background: #010102;
+	}
+
+	.menu ul li {
+				list-style: none;
+				display: inline;    
+	}
+	
+	.menu a:hover {
+					animation: foo01 2s forwards;
+	}
+	
+	@keyframes foo01 {
+						100% {
+							color: black;
+							background-color: white;
+						}
+			
+
+	}
+	
+	.menu a.zivotopis {
+						background-color: #a34f52;
+	}
+	
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 20px;
+		overflow: hidden;
+		text-align: center;
+	}
+	
+	li a {
+		color: white;
+		padding: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		text-decoration: none;
+		font-size: 15px;
+		font-family: arial;
+		text-transform: uppercase;
+		position: relative;
+
+	}
+
+
+	.header{
+			height: 500px;
+	}
+	
+	.main{	
+			position: relative;
+			width: 1200px;
+			margin: 0 auto;
+	}
+
+	.cinfo{
+			width: 1100px;
+			height: 440px;
+			position: relative;
+			margin: 0 auto;
+			right: 0;
+			left: 0;
+			top: 60px;
+			font-family: arial;
+	}
+	
+	
+	.infotext {
+				top: 100px;
+				font-family: arial;
+	}
+	
+	
+	.hello{
+			display: none;
+	}
+	
+	.profpic{
+			width: 600px;
+			height: 500px;
+			position: absolute;
+			top: 310px;
+			margin: 0 auto;
+			right: 0;
+			left: 0;
+	}
+	
+	.secondhalf{
+			position:absolute;
+			top: 740px;
+			margin: 0 auto;
+			right: 0;
+			left: 0;
+	}
+	
+	.school{
+			margin: 0 auto;
+			width: 700px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+	}
+	
+	p {
+		color: white;
+		font-family: century gothic;
+		font-size: 20px;
+		padding-bottom:1px;
+	}
+	
+	.second{ 
+			font-size: 15px;
+			text-align: right;
+			color: #a34f52;
+	}
+	
+	h2 {
+		font-family: century gothic;
+		font-weight: normal;
+		color: white;
+		letter-spacing: 10px;
+		text-align: center;
+		font-size: 30px;
+	}
+	
+	
+	.skillbar {
+				position:relative;
+				display:block;
+				margin-bottom:15px;
+				width:350px;
+				background:#eee;
+				height:20px;
+				border-radius:3px;
+				-moz-border-radius:3px;
+				-webkit-border-radius:3px;
+				-webkit-transition:0.4s linear;
+				-moz-transition:0.4s linear;
+				-ms-transition:0.4s linear;
+				-o-transition:0.4s linear;
+				transition:0.4s linear;
+				-webkit-transition-property:width, background-color;
+				-moz-transition-property:width, background-color;
+				-ms-transition-property:width, background-color;
+				-o-transition-property:width, background-color;
+				transition-property:width, background-color;
+}
+
+	.skillbar-title {
+						position:absolute;
+						top:0;
+						left:0;
+						width:110px;
+						font-size:13px;
+						text-transform: uppercase;
+						color:white ;
+						background: #333333;
+						-webkit-border-top-left-radius:3px;
+						-webkit-border-bottom-left-radius:4px;
+						-moz-border-radius-topleft:3px;
+						-moz-border-radius-bottomleft:3px;
+						border-top-left-radius:3px;
+						border-bottom-left-radius:3px;
+	}
+
+	.skillbar-title span {
+							display:block;
+							background:rgba(0, 0, 0, 0.1);
+							padding:0 20px;
+							font-family: arial;
+							font-size: 10px;
+							height:20px;
+							line-height:20px;
+							-webkit-border-top-left-radius:3px;
+							-webkit-border-bottom-left-radius:3px;
+							-moz-border-radius-topleft:3px;
+							-moz-border-radius-bottomleft:3px;
+							border-top-left-radius:3px;
+							border-bottom-left-radius:3px;
+	}
+
+	.skillbar-bar {
+					height:20px;
+					width:0px;
+					background:#a34f52;
+					border-radius:3px;
+					-moz-border-radius:3px;
+					-webkit-border-radius:3px;
+}
+
+	.skill-bar-percent {
+						position: absolute;
+						right:10px;
+						top:0;
+						font-size:12px;
+						font-family: arial;
+						font-weight: bold;
+						height:20px;
+						line-height:20px;
+						color:black;
+	}
+	
+	.bar {
+			width: 290px;
+			position: relative;
+			left: 15%;
+	}
+	
+	.bar2 {
+			width: 290px;
+			position: relative;
+			left: 15%;
+
+	}
+	
+	.bar3 {	
+			width: 290px;
+			position: relative;
+			left: 15%;
+
+	}
+	
+	.bar4 {
+			width: 290px;
+			position: relative;
+			left: 15%;
+
+	}
+	
+	.bar5 {
+			width: 290px;
+			position: relative;
+			left: 15%;
+			padding-bottom: 20px;
+	}
+	
+	.bar6 {
+			width: 290px;
+			position: absolute;
+			right: 20%;
+			top: 475px;
+	}
+	
+	.bar7 {
+			width: 290px;
+			position: absolute;
+			top: 510px;
+			right: 20%;
+
+	}
+	
+	.bar8 {	
+			width: 290px;
+			position: absolute;
+			top: 545px;
+			right: 20%;
+
+	}
+	
+	.bar9 {
+			width: 290px;
+			position: absolute;
+			top: 580px;
+			right: 20%;
+
+	}
+	
+	.bar10 {
+			width: 290px;
+			position: absolute;
+			top: 615px;
+			right: 20%;
+
+	}
+
+	.likes {
+				font-size: 30px;
+	}
+	.like {
+		margin: 0 auto;
+			padding-top: 25px;
+			padding-bottom: 25px;
+		width: 700px;
+		text-align: center;
+	}
+	

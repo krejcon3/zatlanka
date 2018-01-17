@@ -1,0 +1,90 @@
+	body{
+		height: 650px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: auto 1000px;
+		background-color: #010102;
+		margin: 0;
+	}
+	
+	.menu{
+		text-align: center;
+		width: 100%;
+		height: 60px;
+		background: #010102;
+	}
+
+	.menu ul li {
+				list-style: none;
+				display: inline;    
+	}
+	
+	.menu a:hover {
+					animation: foo01 2s forwards;
+	}
+	
+	@keyframes foo01 {
+						100% {
+							color: black;
+							background-color: white;
+						}
+			
+
+	}
+	
+	.menu a.portfolio {
+						background-color: #a34f52;
+	}
+	
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 20px;
+		overflow: hidden;
+		text-align: center;
+	}
+	
+	li a {
+		color: white;
+		padding: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		text-decoration: none;
+		font-size: 15px;
+		font-family: arial;
+		text-transform: uppercase;
+		position: relative;
+
+	}
+
+
+	.header{
+			height: 500px;
+	}
+	
+	.main{	
+			position: relative;
+			width: 1200px;
+			margin: 0 auto;
+	}
+
+	.fadein {
+				position: relative;
+				width: 1100px;
+				height: 500px;
+					position: absolute;
+					margin: 0 auto;
+					left: 0;
+					right: 0;				
+	}
+	
+	.fadein img {
+					position: absolute;
+					margin: 0 auto;
+					left: 0;
+					right: 0; 
+	}
+	
+	.hello{
+			display: none;
+	}

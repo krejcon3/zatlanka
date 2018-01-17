@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="WINDOWS-1250">
+
+		<title>Pokročilé selektory</title>
+
+		<link rel="stylesheet" type="text/css" href="res/css/style.css">
+
+	</head>
+		<body>
+
+
+
+
+
+		</body>
+</html>

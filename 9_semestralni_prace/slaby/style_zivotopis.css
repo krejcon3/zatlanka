@@ -1,0 +1,41 @@
+body {
+    background-color: #EEE;
+    
+}
+
+h1 h2 {
+    font-family: Coral;
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+       
+.header {
+    background-color: #66CCFF;
+    color: white;
+    text-align: center;  
+}
+
+.content {
+    width: 800;
+}
+
+img {
+    float: left;
+    padding: 10 20 10 20;
+}
+
+.nadpis {
+    float: left;
+    padding: 10px;
+}
+
+.text {
+    padding: 10px;
+}

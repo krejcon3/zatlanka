@@ -1,0 +1,225 @@
+@keyframes menu {
+    0%   {background-color: #F0F8FF; color: #FFC0CB;}
+    25%  {background-color: #F4E7EF; color: #FAD4DD;}
+    50%  {background-color: #FAD4DD; color: #F4E7EF;}
+    100% {background-color: #FFC0CB; color: #F0F8FF;}
+}
+
+.background {
+    background: -webkit-linear-gradient(#A9A9A9,#2F4F4F); 
+    background: -o-linear-gradient(#A9A9A9,#2F4F4F); 
+    background: linear-gradient(#A9A9A9,#2F4F4F); 
+}
+.hlpg {
+   height: 100%;
+   width: 100%;
+   display: block;
+   position: fixed;
+   align-items: center;
+   justify-content: center;
+   font-family: "Helvetica", sans-serif;
+   color: #F0F8FF;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   width: auto;
+   margin-top: 250px;
+   margin-left: 300px;
+   margin-right: auto; 
+}
+
+a:hover {
+    animation-name: menu;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;    
+}
+
+a:active {
+color: HotPink;
+}
+
+.menu {
+   font-family: "Helvetica", sans-serif;
+   color: #F0F8FF;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   margin-bottom: 80px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #F0F8FF;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.telo {
+    font-family: "Helvetica", sans-serif;
+    color: #F0F8FF;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    }
+    
+td { 
+    padding: 10px;
+}
+
+.smaller {
+    font-style: italic;
+    font-size: 11px;
+    margin: 3px;
+	color: #F0F8FF
+}
+
+.jestesmaller {
+    font-style: italic;
+    font-size: 9px;
+    margin-bottom: 7px;
+	color: #F0F8FF
+}
+    
+table.galerie img, table.galerie video, .img {
+    width:200px; 
+    height: auto;
+    margin-right:10px;
+}
+
+.vid {
+    width:200px; 
+    height: auto;
+    margin-right:10px;
+}
+.footer {
+    font-family: "Helvetica", sans-serif;
+    color: #F0F8FF;
+    text-transform: uppercase;
+    font-size:9px;
+    text-align: right;
+}
+
+.galerie {
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 80px;
+    }
+    
+.uvod  {
+    font-family: "Helvetica", sans-serif;
+    color: #F0F8FF;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    } 
+    
+.ap_container {
+    width:350px;
+    height: auto;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.player {
+
+}
+
+.songtitle {
+    font-family: "Helvetica", sans-serif;
+    color: #F0F8FF;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+} 
+
+.song-slider { 
+   justify-content: center;
+   align-items: center;
+   margin-left: auto;
+} 
+
+.current-time {
+   float: left;
+   margin-left: 600px;
+   color: #F0F8FF;
+   
+}   
+
+.duration {
+   float: right;
+   margin-right: 620px;
+   color: #F0F8FF;
+} 
+
+.controlers {
+  width: 24px;
+  height: auto;
+  float:left;
+  margin-left: 600px;
+  clear: both;
+  display: table;
+}
+
+.controlers *{
+	vertical-align: middle;
+	margin-right: 2px;
+}
+
+.volume-slider {
+  margin-left: 50px;
+}
+
+.next-song {
+  font-family: "Helvetica", sans-serif;
+  color: #F0F8FF;
+  text-transform: uppercase; 
+  float:left;
+  margin-top: 20px;
+  margin-left: 600px;
+}
+
+.kontakt {
+	font-family: "Helvetica", sans-serif;
+    color: #F0F8FF;
+    text-transform: uppercase;
+    float: left;
+	margin-top: 10px;
+	margin-left: 600px;
+    }
+
+.button {
+	margin-top: 10px;
+	color: #FFC0CB;
+	background-color: transparent;
+}

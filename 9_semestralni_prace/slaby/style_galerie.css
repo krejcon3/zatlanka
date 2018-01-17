@@ -1,0 +1,37 @@
+body {
+    background-color: #EEE;
+}
+
+h1 h2 {
+    font-family: Coral;
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Cursive; Arial;
+}
+
+.header {
+    background-color: #66CCFF;
+    color: white;
+    text-align: center;
+}
+
+.content {
+    padding: 10px;
+}
+
+img {
+    padding:
+} 
+
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 2px 0px;
+    text-align: center;
+    color: white;
+} 

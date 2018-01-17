@@ -1,0 +1,72 @@
+body {
+    background-color: #EEE;
+    
+}
+
+h1 {
+    font-family: Coral;
+}
+
+img {
+    padding: 50px;
+}
+
+img:hover {
+    background-size 110%;
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {    
+    background-color: #66CCFF;
+    color: white;
+    text-align: center;
+}
+
+.vizitka {
+    width: 700px;
+    display inline-block;
+    margin: 4px;
+    position: relative;    
+}
+.vizitka img{
+    width: 100%;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.vizitka:hover img{
+    filter:blur(2px) brightness(60%);
+    box-shadow: 0 0 16px #66CCFF;
+}
+
+.vizitka :not(img) {
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 115%
+
+}
+
+.vizitka h2{
+    top:40%
+}
+
+.vizitka h3{
+    top:55%;
+}
+
+.vizitka:hover :not(img){
+
+}
+
+.txt {
+  
+}

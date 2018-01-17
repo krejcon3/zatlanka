@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Stylesheet.css">
+	<title>Volne tema</title>
+</head>
+<body>
+<div id="hider">
+	<script src="../Script.js" type="text/javascript"></script>
+	<div class="header">
+		<h2> Specialista na weby </h2>
+	</div>
+	<div class="main">
+		<div class="menu">
+			<div class="prop"><img src="../pp.jpg" alt="Erb" title="Erb Buckley"></div>
+			<ul>
+				<li><a href="../Index.html"> Home </a></li>
+				<li><a href="../1/Index.html"> �ivotopis </a></li>
+				<li><a href="../2/Index.html"> Galerie </a></li>
+				<li><a href="../3/Index.html"> Voln� t�ma </a></li>
+				<li><a href="../4/Index.html"> Kontakt </a></li>
+			</ul>
+		</div>
+		<div class="Text">
+			<h2> R�zn� u�ite�n� apky </h2>
+			<iframe title="odevzdal jsem vcas"
+					src="http://free.timeanddate.com/clock/i61upyje/n204/tlcz12/fn9/tcf90/ftb/bo2/pd2/tt0/ts1/tb4"
+					frameborder="0" width="177" height="36"></iframe>
+			<form class="calcForm" name="calculator" action="/action_page.php">
+				<input type="text" class="calcDisplay" id="display"/>
+				<div class="calcRow">
+					<input type="button" class="calcButton" value="7" onclick="numInput('7')"/>
+					<input type="button" class="calcButton" value="8" onclick="numInput('8')"/>
+					<input type="button" class="calcButton" value="9" onclick="numInput('9')"/>
+					<input type="button" class="calcButton" value="+" onclick="setOperation('add')"/>
+				</div>
+				<div class="calcRow">
+					<input type="button" class="calcButton" value="4" onclick="numInput('4')"/>
+					<input type="button" class="calcButton" value="5" onclick="numInput('5')"/>
+					<input type="button" class="calcButton" value="6" onclick="numInput('6')"/>
+					<input type="button" class="calcButton" value="-" onclick="setOperation('subtract')"/>
+				</div>
+				<div class="calcRow">
+					<input type="button" class="calcButton" value="1" onclick="numInput('1')"/>
+					<input type="button" class="calcButton" value="2" onclick="numInput('2')"/>
+					<input type="button" class="calcButton" value="3" onclick="numInput('3')"/>
+					<input type="button" class="calcButton" value="x" onclick="setOperation('multiply')"/>
+				</div>
+				<div class="calcRow">
+					<input type="button" class="calcButton" value="0" onclick="numInput('0')"/>
+					<input type="button" class="calcButton" value="." onclick="insertDecimal('.')"/>
+					<input type="button" class="calcButton" value="C" onclick="clearDisplay()"/>
+					<input type="button" class="calcButton" value="=" onclick="calculate()"/>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<p> Omnes volo est pax </p>
+	</div>
+</div>
+</body>
+</html>
